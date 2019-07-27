@@ -1,7 +1,7 @@
 #include "MinimizingAlgorithms.h"
 
 
-#define GREEDY_THRESHOLD	   0.7
+#define GREEDY_THRESHOLD 0.7
 #define GREEDY_COEFF_WEIGHT    0.35
 #define GREEDY_COEFF_DURATION  0.30
 #define GREEDY_COEFF_DIRECTIVE 0.35
