@@ -101,9 +101,6 @@ void showTasks(const std::vector<Task> &tasks)
 // Brute Force
 std::vector<Task> LexicographicBruteForce(const std::vector<Task> &tasks)
 {
-	if (tasks.empty())
-		throw "Tasks empty";
-
 	std::vector<Task> tasks_min;
 	std::vector<Task> tasks_tmp;
 	tasks_tmp = tasks_min = tasks;
@@ -156,7 +153,7 @@ std::vector<Task> Greedy(const std::vector<Task> &tasks)
 
 		if (!object1.weight && !object2.weight)
 			return object1.id > object2.id;
-		else if (!object1.id)
+		else if (!object1.weight)
 			return false;
 
 		return ((object1.duration < object2.duration) * GREEDY_COEFF_DURATION
