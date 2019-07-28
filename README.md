@@ -31,7 +31,7 @@
 
 ### Критерий
 
-![critea](image/critea)
+![criteria](images/criteria.png)
 
 ## Реализованные алгоритмы решения задачи:
 
